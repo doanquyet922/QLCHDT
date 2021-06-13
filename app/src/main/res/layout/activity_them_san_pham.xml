@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ThemSanPhamActivity">
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/imSanPham"
+        android:layout_width="148dp"
+        android:layout_height="113dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+    <EditText
+        android:layout_toRightOf="@id/tvTenSP"
+        android:id="@+id/edTenSP"
+        android:layout_width="183dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:hint="Tên sản phẩm"
+        android:paddingTop="1dp"
+        android:paddingEnd="1dp"
+        android:textSize="13sp"
+
+        app:layout_goneMarginEnd="1sp"
+        app:layout_goneMarginTop="1sp" />
+
+    <EditText
+        android:layout_below="@id/edTenSP"
+        android:layout_toRightOf="@id/tvHang"
+        android:id="@+id/edTenHang"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="6dp"
+        android:hint="Tên hãng"
+        android:paddingTop="1dp"
+        android:paddingEnd="1dp"
+        android:textSize="13sp"
+       />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tvGiaNhap"
+        android:text="0"
+        android:id="@+id/edGiaNhap"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Giá Nhập"
+        android:inputType="number"
+        android:textSize="15sp"
+        />
+
+    <EditText
+       android:layout_toRightOf="@id/edGiaNhap"
+        android:layout_below="@id/tvGiaBan"
+      android:layout_marginLeft="20dp"
+        android:text="0"
+        android:id="@+id/edGiaBan"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Giá bán"
+        android:inputType="number"
+        android:textSize="15sp"
+       />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tvsoLuong"
+        android:text="0"
+        android:id="@+id/edSoluong"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="Số lượng"
+        android:inputType="number"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:layout_toRightOf="@id/edSoluong"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tvTGBH"
+        android:text="0"
+        android:inputType="number"
+        android:id="@+id/edTGBH"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="5dp"
+        android:hint="Thời gian bảo hành"
+        android:textSize="15sp"
+       />
+
+    <EditText
+        android:layout_above="@id/bLuu"
+        android:layout_margin="5dp"
+        android:layout_below="@id/tvCauHinh"
+        android:id="@+id/edCauHinh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:hint="Cấu hình"
+        android:textSize="15sp"
+      />
+
+
+    <TextView
+        android:layout_toRightOf="@id/imSanPham"
+        android:id="@+id/tvTenSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tên SP:"
+      />
+
+    <TextView
+        android:layout_toRightOf="@id/imSanPham"
+        android:layout_below="@id/tvTenSP"
+        android:id="@+id/tvHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Hãng:"
+       />
+
+    <TextView
+        android:layout_below="@id/imSanPham"
+        android:id="@+id/tvGiaNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="G.Nhập:"
+        />
+
+    <TextView
+       android:layout_toRightOf="@id/tvGiaNhap"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/imSanPham"
+        android:id="@+id/tvGiaBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text="G.Bán:"
+       />
+
+    <TextView
+        android:layout_below="@id/edGiaNhap"
+        android:id="@+id/tvsoLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="S.Lượng:"
+       />
+
+    <TextView
+       android:layout_toRightOf="@id/tvsoLuong"
+        android:layout_marginLeft="125dp"
+        android:layout_below="@id/edGiaBan"
+        android:id="@+id/tvTGBH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:text="TGBH:"
+        />
+
+    <TextView
+        android:layout_below="@id/edSoluong"
+        android:id="@+id/tvCauHinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Cấu hình chi tiết:"
+       />
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bLuu"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Lưu"
+       />
+
+</RelativeLayout>

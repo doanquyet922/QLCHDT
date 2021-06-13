@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#fefefe"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DangNhapActivity"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/DangNhap_tvDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:layout_marginTop="45dp"
+        android:textColor="#9E9228"
+        android:textSize="50sp"
+        android:textStyle="bold|normal"
+        android:layout_gravity="center"></TextView>
+
+    <LinearLayout
+        android:id="@+id/lyUser"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/botron_edt"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"></ImageView>
+
+
+
+        <EditText
+            android:hint="Mã sinh viên"
+            android:background="@drawable/botron_edt"
+            android:id="@+id/edtDNUser"
+            android:layout_width="220dp"
+
+            android:layout_height="match_parent"
+            ></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyPass"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botron_edt"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_password"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"></ImageView>
+        <com.google.android.material.textfield.TextInputLayout
+            app:passwordToggleEnabled="true"
+            android:layout_width="210dp"
+            app:hintEnabled="false"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:background="#BAB6B6"
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Mật khẩu" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <CheckBox
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbLuuMK"
+        android:text="Lưu mật khẩu"
+        />
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/botron_btndn"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:id="@+id/btnDN"
+        ></Button>
+
+    <TextView
+        android:id="@+id/tvHoac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_______________________________"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000"></TextView>
+
+
+
+
+</LinearLayout>
